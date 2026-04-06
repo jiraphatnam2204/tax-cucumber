@@ -1,0 +1,23 @@
+{
+  "name": "tax-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cli.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "report": "node generate-report.js",
+    "test:report": "cucumber-js && node generate-report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^12.7.0",
+    "chai": "^6.2.2",
+    "cucumber-html-reporter": "^7.2.0",
+    "expect": "^30.3.0"
+  },
+  "devDependencies": {
+    "@cucumber/pretty-formatter": "^3.2.0"
+  }
+}

@@ -1,0 +1,796 @@
+[
+  {
+    "description": "  Calculate progressive income tax across all 9 tax brackets",
+    "elements": [
+      {
+        "description": "",
+        "id": "thai-income-tax-calculation;income-taxed-entirely-in-the-0%-bracket",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Income taxed entirely in the 0% bracket",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "a gross income of 200000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1067999
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "personal",
+                      "60000"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 7,
+            "name": "deductions:",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 325399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I calculate tax",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 258300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the taxable income should be 140000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1675000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "tax should be 0.0",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 399100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "thai-income-tax-calculation;income-taxed-up-to-the-5%-bracket",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Income taxed up to the 5% bracket",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "a gross income of 300000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100300
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "personal",
+                      "60000"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 16,
+            "name": "deductions:",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 94300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I calculate tax",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the taxable income should be 240000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 283799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "tax should be 4500.0",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 108400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "thai-income-tax-calculation;income-taxed-up-to-the-10%-bracket",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Income taxed up to the 10% bracket",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "a gross income of 500000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47799
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "personal",
+                      "60000"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 25,
+            "name": "deductions:",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I calculate tax",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the taxable income should be 440000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "tax should be 21500.0",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "thai-income-tax-calculation;income-taxed-up-to-the-15%-bracket",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Income taxed up to the 15% bracket",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "a gross income of 700000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 182399
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "personal",
+                      "60000"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 34,
+            "name": "deductions:",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "I calculate tax",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "the taxable income should be 640000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "tax should be 48500.0",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "thai-income-tax-calculation;income-taxed-up-to-the-20%-bracket",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "Income taxed up to the 20% bracket",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 42,
+            "name": "a gross income of 900000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58100
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "personal",
+                      "60000"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 43,
+            "name": "deductions:",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 45,
+            "name": "I calculate tax",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "the taxable income should be 840000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "tax should be 83000.0",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "thai-income-tax-calculation;income-taxed-up-to-the-25%-bracket",
+        "keyword": "Scenario",
+        "line": 50,
+        "name": "Income taxed up to the 25% bracket",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 51,
+            "name": "a gross income of 1500000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34400
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "personal",
+                      "60000"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 52,
+            "name": "deductions:",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 54,
+            "name": "I calculate tax",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 81399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 55,
+            "name": "the taxable income should be 1440000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 56,
+            "name": "tax should be 225000.0",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "thai-income-tax-calculation;income-taxed-up-to-the-30%-bracket",
+        "keyword": "Scenario",
+        "line": 59,
+        "name": "Income taxed up to the 30% bracket",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 60,
+            "name": "a gross income of 3000000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39899
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "personal",
+                      "60000"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 61,
+            "name": "deductions:",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 63,
+            "name": "I calculate tax",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 64,
+            "name": "the taxable income should be 2940000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "tax should be 647000.0",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "thai-income-tax-calculation;income-taxed-up-to-the-35%-bracket",
+        "keyword": "Scenario",
+        "line": 68,
+        "name": "Income taxed up to the 35% bracket",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 69,
+            "name": "a gross income of 7000000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32899
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "personal",
+                      "60000"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 70,
+            "name": "deductions:",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 72,
+            "name": "I calculate tax",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 73,
+            "name": "the taxable income should be 6940000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 74,
+            "name": "tax should be 1944000.0",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "thai-income-tax-calculation;income-taxed-up-to-the-37%-bracket",
+        "keyword": "Scenario",
+        "line": 77,
+        "name": "Income taxed up to the 37% bracket",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 78,
+            "name": "a gross income of 12000000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33500
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "personal",
+                      "60000"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 79,
+            "name": "deductions:",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 81,
+            "name": "I calculate tax",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 82,
+            "name": "the taxable income should be 11940000",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 83,
+            "name": "tax should be 3732800.0",
+            "match": {
+              "location": "features\\step_definitions\\taxSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "thai-income-tax-calculation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Thai Income Tax Calculation",
+    "tags": [],
+    "uri": "features\\tax_calculation.feature"
+  }
+]
