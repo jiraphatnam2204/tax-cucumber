@@ -13,7 +13,7 @@ Given('a gross income of {int}', function (amount) {
 
 Given('deductions:', function (dataTable) {
   // dataTable เป็น Cucumber datatable
-  const rows = dataTable.rows();
+  const rows = dataTable.raw();
   // Map to object
   const map = {};
   rows.forEach(([k, v]) => { map[k] = v; });

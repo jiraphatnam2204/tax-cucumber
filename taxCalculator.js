@@ -30,7 +30,7 @@ function calculateTax(grossIncome, deductions = {}) {
   }
 
   
-  const personal = Number(deductions.personal || 60000); 
+  const personal = deductions.personal !== undefined ? Number(deductions.personal) : 60000; // fix
   const childrenCount = Number(deductions.children?.count || 0);
   const perChild = Number(deductions.children?.perChild || 30000);
   const parentsCount = Number(deductions.parents?.count || 0);
